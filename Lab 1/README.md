@@ -129,9 +129,11 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your device might look like here.**\*\*
 
-Screen Shot 2021-09-06 at 9.53.08 PM.png<img width="1135" alt="Costume sketches" src="https://user-images.githubusercontent.com/52221419/132272323-65cee185-ef0a-41e6-b743-2810f00d24e0.png">
+**Costume Sketches**
+<img width="1135" alt="Costume sketches" src="https://user-images.githubusercontent.com/52221419/132272323-65cee185-ef0a-41e6-b743-2810f00d24e0.png">
 
-<img width="499" alt="Prototype costume" src="https://user-images.githubusercontent.com/52221419/132272363-ebed8d9a-e811-4941-a007-e0b574ed43cb.png">
+**Costume Prototype**
+<img width="499" alt="Costume sketches" src="https://user-images.githubusercontent.com/52221419/132272363-ebed8d9a-e811-4941-a007-e0b574ed43cb.png">
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
