@@ -70,7 +70,7 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
-This interaction would take place wherever you are mining cryptocurrencies. This could be your office, your basement, or perhaps a dedicated mining warehouse. Depending on where you would like the notification light to be, this could include that location as well. There is really only one player for this interactive device, the person mining cryptocurrency. The activity is the individual is mining cryptocurrencies to a shared pool. This essentially means the miner works in tandem with many other miners to mine the crytpocurrency, and then the rewards are split among all the miners. To do so, each miner solves hashing problems to produce "shares", which are then submitted to the pool. If the shares are valid, it is successful and the miner is rewarded, if they are invalid, the miner failed the hashing problem (or some other issue arose) and the miner is not rewarded, or the shares are "stale" meaning someone else in the pool completed the same hashing problem as you and submitted it to the pool before you, and the miner is not rewarded. The goal of the miner is to collect as many valid shares as possible, as this is how they get rewarded. 
+This interaction would take place wherever you are mining cryptocurrencies. This could be your office, your basement, or perhaps a dedicated mining warehouse. Depending on where you would like the notification light to be, this could include that location as well. There is really only one player for this interactive device, the person mining cryptocurrency. The activity is the individual is mining cryptocurrencies to a shared pool. This essentially means the miner works in tandem with many other miners to mine the crytpocurrency, and then the rewards are split among all the miners. To do so, each miner solves hashing problems to produce "shares", which are then submitted to the pool. If the shares are valid, it is successful and the miner is rewarded and if they are invalid, the miner failed the hashing problem (or some other issue arose) and the miner is not rewarded. The goal of the miner is to collect as many valid shares as possible, as this is how they get rewarded. 
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 
@@ -80,6 +80,7 @@ Present your idea to the other people in your breakout room. You can just get fe
 
 \*\***Summarize feedback you got here.**\*\*
 
+Our initial plan was to simply have two flashing lights: one for valid shares, and one for invalid shares. However, some of the feedback we got was to take an average of the amount of valid and invalid shares, and leave on a solid color (red vs. green) based on the proportion of valid to invalid shares. This is because a flash for each share that was valid or invalid does not tell you much about the general state of the machine, just whether that one singular share passed. However, if it starts to change to mostly valid or invalid, we will be able to notice with the average. 
 
 ## Part B. Act out the Interaction
 
@@ -87,8 +88,11 @@ Try physically acting out the interaction you planned. For now, you can just pre
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
+We found that the placement of the light was imporant. We initially placed it on the desk near our computer, but found that the many lights on the desk (monitor, flashing lights from the desktop window, and the RGB keyboard) caused distraction from the light, making it less noticeable. 
+
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
 
+It was more effective to put the device in some location that had less light-based distraction, such as a coffee table or shelf somewhere away from many flashing lights. 
 
 ## Part C. Prototype the device
 
@@ -102,6 +106,7 @@ If you run into technical issues with this tool, you can also use a light switch
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
 
+It was not working on my teammates laptop, but I was able to it to work on mine. For some reason they could not get the web server to run, although we did the same actions. It worked flawlessly on my machine. I was not able to get the web page to go fullscreen on my iPhone, however. The user interface was very simple and effective! 
 
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
@@ -121,22 +126,27 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your device might look like here.**\*\*
 
+
+
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+
+There is not too much concern for the device costume, considering it will simply be a light that displays whether or not your crypto mining machine is working or not. So the main thing was to provide a stable housing that would hide electrical components. It would sit somewhere safe so durability or element protection is not as important. 
 
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
+https://youtu.be/jeE3tEhL88A
+
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
-
+Kristjan Tomasson (kt476) and I worked on this lab together. We came up with and did all of our work equally. 
 
 # Staging Interaction, Part 2 
 
 This describes the second week's work for this lab activity.
-
 
 ## Prep (to be done before Lab on Wednesday)
 
