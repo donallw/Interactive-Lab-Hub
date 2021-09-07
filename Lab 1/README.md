@@ -76,6 +76,9 @@ Sketch a storyboard of the interactions you are planning. It does not need to be
 
 \*\***Include a picture of your storyboard here**\*\*
 
+<img width="949" alt="Storyboard" src="https://user-images.githubusercontent.com/52221419/132272433-5fa8b593-1b83-4db8-a270-f94c38413fe7.png">
+
+
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
@@ -126,7 +129,9 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your device might look like here.**\*\*
 
+Screen Shot 2021-09-06 at 9.53.08 PM.png<img width="1135" alt="Costume sketches" src="https://user-images.githubusercontent.com/52221419/132272323-65cee185-ef0a-41e6-b743-2810f00d24e0.png">
 
+<img width="499" alt="Prototype costume" src="https://user-images.githubusercontent.com/52221419/132272363-ebed8d9a-e811-4941-a007-e0b574ed43cb.png">
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
