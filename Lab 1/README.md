@@ -190,6 +190,14 @@ You will be assigned three partners from another group. Go to their github pages
 
 \*\***Summarize feedback from your partners here.**\*\*
 
+I got a few comments on canvas that proved to be helpful in changing my prototype. One of my reviewers offered the great idea to apply our technology to deep learning models, where the light can indicate if something goes awry during the long training process many deep learning models require. We did not directly implement this in our second prototype, but the technology could be easily applied to that field - we wanted to further our device before using it elsewhere.
+
+One of my other reviewers gave a few good suggestions. First, he suggested that we can make the device portable. This is a great idea, because in that sense we can bring the CryptoChecker around wherever we are, instead of only being able to check the status in one location, where at that point we could simply look at the computer running the cryptocurrency miner. Since we used our mobile phone to create the light, this was actually already possible with our device, although the video appeared otherwise. He also suggested that we add audio to the device, in order to help further adding alerts to the crypto checker since it can be easy to ignore a light. 
+
+My last reviewer did not add too much, but liked our storyboard and advised us to trim our video down. 
+
+I also got some more feedback at my lab table in class, where we were told our video was not clear enough, and the light was not too visible. They also noted how the background was distracting. 
+
 ## Make it your own
 
 Do last week’s assignment again, but this time: 
@@ -198,3 +206,15 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+We fixed our storyboard for the second part of the lab, shown below. We actually did a Verplank diagram by accident, so we have a proper storybaord now. 
+
+**Storyboard:**
+
+
+We made numerous changes to the video and the prototype. First, instead of fading from green to red based on an average of successful/failed shares, we had the miner simply display white if there was no errors. This was mainly because the user should not be paying attention to the light if everything is going to plan, so the green was too prominent of a color. We modified it to flash yellow when errors were starting to arise, but not aggressively. Once the errors multiplied and it was getting more severe, the CryptoChecker would flash red, as well as sound an alarm. This was much more noticeable than before and helped the user realize there was an issue more quickly so they can go to fix it. 
+
+We also modified the video to make it more clear what was going on. We used a split screen tactic, with the script running on one side and the device on the right side. this made it more clear how the light was responding to the mining script. We also added text to explain the actions in the video more effectively. 
+
+**Improved Prototype Video:**
+https://www.youtube.com/watch?v=96IsJhStaT4
