@@ -76,6 +76,9 @@ Sketch a storyboard of the interactions you are planning. It does not need to be
 
 \*\***Include a picture of your storyboard here**\*\*
 
+<img width="949" alt="Storyboard" src="https://user-images.githubusercontent.com/52221419/132272433-5fa8b593-1b83-4db8-a270-f94c38413fe7.png">
+
+
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
@@ -117,6 +120,29 @@ Now, hange the goal within the same setting, and update the interaction with the
 
 \*\***Show the follow-up work here.**\*\*
 
+We used the following python definitions to create a fake cryptocurrency mining script, so it appeared as if we were mining cryptocurrency but we were actually not. By calling the functions `valid()`, `invalid()`, and `normal()`, we can print out a faux line that would indicate the status of the miner. 
+```
+import time
+
+class bcolors:
+    OKGREEN = '\033[92m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+
+MESSAGE_WAIT = 2
+
+def valid():
+    print(f"{bcolors.OKGREEN}Eth: GPU1: ETH share found! \nEth: Share actual difficulty: 14.1 GH (!)\nEth: Share accepted in 7 ms{bcolors.ENDC}")
+    time.sleep(MESSAGE_WAIT)
+
+def invalid():
+    print(f"{bcolors.FAIL}Eth: GPU1: ETH share invalid! \nEth: Share actual difficulty: 15.1 GH (!)\nEth: Share rejected in 5 ms{bcolors.ENDC}")
+    time.sleep(MESSAGE_WAIT)
+
+def normal():
+    print("Eth: New job #7a6b44n from ssl://eth-us-east.flexpool.io:5555; diff: 4000 MH")
+    time.sleep(MESSAGE_WAIT)
+ ```
 
 ## Part E. Costume the device
 
@@ -126,7 +152,15 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your device might look like here.**\*\*
 
+**Costume Sketches**
 
+
+<img width="1135" alt="Costume sketches" src="https://user-images.githubusercontent.com/52221419/132272323-65cee185-ef0a-41e6-b743-2810f00d24e0.png">
+
+**Costume Prototype**
+
+
+<img width="499" alt="Costume sketches" src="https://user-images.githubusercontent.com/52221419/132272363-ebed8d9a-e811-4941-a007-e0b574ed43cb.png">
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
