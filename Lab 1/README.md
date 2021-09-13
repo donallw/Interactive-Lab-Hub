@@ -211,6 +211,7 @@ We fixed our storyboard for the second part of the lab, shown below. We actually
 
 **Storyboard:**
 
+<img width="804" alt="Fixed Storybard" src="https://user-images.githubusercontent.com/52221419/133135598-86beb93f-0c47-4a25-b313-404c28e19df9.png">
 
 We made numerous changes to the video and the prototype. First, instead of fading from green to red based on an average of successful/failed shares, we had the miner simply display white if there was no errors. This was mainly because the user should not be paying attention to the light if everything is going to plan, so the green was too prominent of a color. We modified it to flash yellow when errors were starting to arise, but not aggressively. Once the errors multiplied and it was getting more severe, the CryptoChecker would flash red, as well as sound an alarm. This was much more noticeable than before and helped the user realize there was an issue more quickly so they can go to fix it. 
 
