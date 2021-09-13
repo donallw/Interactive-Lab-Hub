@@ -116,7 +116,9 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
-Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
+The demo for our first use of tinkerbelle can be shown below. We then applied a costume to the prototype as lined out in Part E. Moreover, we wrote a special script to mimic a cryptocurrency miner, which is shown in the follow-up work. This helped us achieve a sense of realism for the prototpye video. 
+
+https://youtu.be/eSSHQjrBd6M
 
 \*\***Show the follow-up work here.**\*\*
 
