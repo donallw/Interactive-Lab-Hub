@@ -23,6 +23,20 @@ def normal():
     print("Eth: New job #7a6b44n from ssl://eth-us-east.flexpool.io:5555; diff: 4000 MH")
     time.sleep(MESSAGE_WAIT)
 
+def restart():
+    print("RESTARTING.....")
+    time.sleep(1)
+    print('\n.')
+    time.sleep(1)
+    print('\n.')
+    time.sleep(1)
+    print('\n.')
+    time.sleep(1)
+    print('\n.')
+    time.sleep(1)
+    print('\n.')
+    time.sleep(MESSAGE_WAIT)
+
 if __name__ == '__main__':
     normal()
     normal()
@@ -69,6 +83,21 @@ if __name__ == '__main__':
     invalid()
     normal()
     invalid()
+    restart()
+    normal()
+    normal()
+    valid()
+    normal()
+    normal()
+    normal()
+    valid()
+    normal()
+    valid()
+    normal()
+    valid()
+    normal()
+    normal()
+    valid()
 
 
 
