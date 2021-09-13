@@ -121,7 +121,7 @@ Now, hange the goal within the same setting, and update the interaction with the
 \*\***Show the follow-up work here.**\*\*
 
 We used the following python definitions to create a fake cryptocurrency mining script, so it appeared as if we were mining cryptocurrency but we were actually not. By calling the functions `valid()`, `invalid()`, and `normal()`, we can print out a faux line that would indicate the status of the miner. 
-`
+```
 import time
 
 class bcolors:
@@ -142,7 +142,7 @@ def invalid():
 def normal():
     print("Eth: New job #7a6b44n from ssl://eth-us-east.flexpool.io:5555; diff: 4000 MH")
     time.sleep(MESSAGE_WAIT)
- `
+ ```
 
 ## Part E. Costume the device
 
