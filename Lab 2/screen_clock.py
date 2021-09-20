@@ -53,7 +53,8 @@ x = 0
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
-font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
+font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 17)
+progFont = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 21)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
@@ -63,9 +64,59 @@ backlight.value = True
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
+#TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
+    currHour = int(time.strftime("%H"))
+    currMinTens = int(time.strftime("%M")) // 10
+    currMinOnes = int(time.strftime("%M")) % 10
+    currSec = int(time.strftime("%S"))
 
-    #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
+    hourArray = [i for i in range(12)]
+    minArrayTens = [i for i in range(6)]
+    minArrayOnes = [i for i in range(10)]
 
+    currTicker = "AM" if currHour < 12 else "PM"
+    
+    y = top
+    x = 0
+    for hour in hourArray:
+        fill = "#FF2D00" if hour == (currHour % 12) else "#FFFFFF"
+        hour = 12 if hour == 0 else hour
+        toPrint = str(hour) + " "
+        draw.text((x, y), toPrint, font=font, fill=fill)
+        x += font.getsize(toPrint)[0]
+    
+    x = width / 3
+    y += font.getsize("sample")[1]
+    for ticker in ["AM", "PM"]:
+        fill = "#FF2D00" if ticker == currTicker else "#FFFFFF"
+        draw.text((x, y), ticker, font=font, fill=fill)
+        x += width / 3 
+    
+    x = width / 4
+    y += font.getsize("sample")[1]
+    for tens in minArrayTens:
+        fill = "#FF2D00" if currMinTens == tens else "#FFFFFF"
+        toPrint = str(tens) + " "
+        draw.text((x, y), toPrint, font=font, fill=fill)
+        x += font.getsize(toPrint)[0]        
+
+    x = width / 5
+    y += font.getsize("sample")[1]
+    for ones in minArrayOnes:
+        fill = "#FF2D00" if currMinOnes == ones else "#FFFFFF"
+        toPrint = str(ones) + " "
+        draw.text((x, y), toPrint, font=font, fill=fill)
+        x += font.getsize(toPrint)[0]        
+
+    x = 0
+    y += font.getsize("sample")[1]
+    filled = currSec // 4
+    toPrint = '[' + ('=' * filled) + (' ' * (15 - filled)) + ']'
+    # toPrint = '|' * currSec
+    
+    draw.text((x, y), toPrint, font=progFont, fill="#FFFFFF")    
+      
+    
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
