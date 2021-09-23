@@ -197,9 +197,14 @@ After that, Git will ask you to login to your GitHub account to push the updates
 
 \*\*\***Take a video of your PiClock.**\*\*\*
 
+https://youtu.be/8fhJVCnigkc
+
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 
+One interaction I would like to include would be one that utilizes the buttons. There could be a large number of options for which the buttons could be used. One of which would be functional, to perhaps switch between 24-hour time and back to 12-hour time. Another could be my stylistic, switching between different colors, instead of just the red I chose. 
+
+I also want to try to make the progess bar for the seconds more fluid. Currently, it only updates at 4 second intervals (there are 15 progress bars for a 60 second minute = 4 seconds/bar). This could be done by using smaller font size, and perhaps a bar for each second, or maybe even more precise than that. Moreover, I think there is a good amount of work that needs to be done with the spacing to make it prettier and easier to read. 
 
 # Prep for Part 2
 
