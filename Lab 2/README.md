@@ -177,6 +177,8 @@ Now you should be able to edit python scripts with Thonny on your Pi.
 ## Part E.
 ### Modify the barebones clock to make it your own
 
+I worked with Kristjan Ari Tomasson (kt476) on this project. We did not produce exactly the same product, but talked about how to code up various parts together. 
+
 Does time have to be linear?  How do you measure a year? [In daylights? In midnights? In cups of coffee?](https://www.youtube.com/watch?v=wsj15wPpjLY)
 
 Can you make time interactive? You can look in `screen_test.py` for examples for how to use the buttons.
@@ -225,6 +227,13 @@ Pull Interactive Lab Hub updates to your repo.
 Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required.
 
 As always, make sure you document contributions and ideas from others explicitly in your writeup.
+
+I worked with Kristjan Ari Tomasson (kt476) on this project. We did not produce exactly the same product, but talked about how to code up various parts together. 
+
+Here is a vide of the updated Raspberry Pi: 
+https://youtu.be/rhSeriS0Rhk
+
+In terms of additions, I incorporated both the proximity sensor as well as the new button/LED and added some more features on the normal buttons on the miniPiTFT. Now, when you click the top button, the color for the highlighted digits in the clock changes randomley! When you click the bottom button, it reverts back to its normal red. If you press both, the Raspberry Pi warns you to only press one button at at time. I also added a minute change sensor using the green light/button. Everytime the minute changes, this light now flashes to tell you the minute has changed! Lastly, there is a proximity sensor, and if anything becomes too close the Raspberry Pi warns you to clear the area as something is too close. 
 
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
 
