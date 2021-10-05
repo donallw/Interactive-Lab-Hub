@@ -103,15 +103,32 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 
 \*\***Post your storyboard and diagram here.**\*\*
 
+**Storyboard: **
+
+<img width="1026" alt="lab3a storyboard" src="https://user-images.githubusercontent.com/52221419/135953340-dd897e11-e76a-4032-99a1-0642d269607a.png">
+
+**Verplank Diagram:  **
+
+<img width="1324" alt="lab 3a verplank" src="https://user-images.githubusercontent.com/52221419/135953362-2af79db8-a7ea-4819-a305-17a62c0439d6.png">
+
+
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
 \*\***Please describe and document your process.**\*\*
+
+As the device is fairly simple and merely takes a message, the dialogue was not very extensive. I thought about this with a quick sketch on a piece of scrap paper. The doorbell simply asks to leave a message after the door remains unopened, records the message, and then wishes them farewell. 
 
 ### Acting out the dialogue
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
+
+I partnered with Kristjan Ari Tomasson. Here is a link to the dialogue: 
+
+https://youtu.be/DRni86YhyUM
+
+When reviewing the video, I realized there were a few issues with my script. For example, it is a better to simply state to leave a message after the tone rather than ask. Not only does this make the device simpler, it also promises to notify the homeowner about any unknown arrivals at the property. If the guest were to not leave a message then the homeowner would still see that a message was recorded in the logs. I modified my storyboard to match this update. Another change that I thought to incorporate would be to understand the length of the message, as the the guest could speak for too long and it may get cut off. Otherwise, the dialogue was fairly straightforward and did not have any issues. 
 
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
