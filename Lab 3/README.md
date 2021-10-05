@@ -103,11 +103,11 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 
 \*\***Post your storyboard and diagram here.**\*\*
 
-**Storyboard: **
+**Storyboard:**
 
 <img width="1026" alt="lab3a storyboard" src="https://user-images.githubusercontent.com/52221419/135953340-dd897e11-e76a-4032-99a1-0642d269607a.png">
 
-**Verplank Diagram:  **
+**Verplank Diagram:**
 
 <img width="1324" alt="lab 3a verplank" src="https://user-images.githubusercontent.com/52221419/135953362-2af79db8-a7ea-4819-a305-17a62c0439d6.png">
 
