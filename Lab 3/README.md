@@ -142,8 +142,22 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+
+Like I noted above, the wording of the device will certainly need improvement - simply stating that we are taking recording and when the recording will begin rather then asking if they would like to leave a message. This will also help to ensure the homeowner knows whether or not someone rang the doorbell and was not let in, regardless of if the guest got into the house or not. One concern I was worried about was the audio level of the device - if this were to be put in practice, the audio might get easily washed out by the sounds of the environment. 
+
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+
+As mentioned above, I will need to incorporate a tactile button that represents the doorbell, and I will also need to find something to represent the door. I think I will use a button here as well, as it simply needs to click when the door opens. 
+
+I was also thinking about using the camera in order to take a photo of whoever is at the door, to give the homeowner an even better idea of who came to the house. 
+
+Additionally, using the proximity sensor to detect when someone is at the door could also help to further the device, and say hello/welcome to anyone at the door. This could be used alternatively to the doorbell to initiate the interaction, but that would indicate that it would be something the homeowner would have to set whenever they left the house. I figured it would be better used as a welcoming device, so that the homeowner does not have to set it whenever they leave the house and can always leave it running. Additionally, It would be a nice feature so that even while the homeowner is home there is something to greet any guests right upon arrival. 
+
+My initial story
+
 3. Make a new storyboard, diagram and/or script based on these reflections.
+
+
 
 ## Prototype your system
 
