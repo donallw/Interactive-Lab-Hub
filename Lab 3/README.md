@@ -153,11 +153,19 @@ I was also thinking about using the camera in order to take a photo of whoever i
 
 Additionally, using the proximity sensor to detect when someone is at the door could also help to further the device, and say hello/welcome to anyone at the door. This could be used alternatively to the doorbell to initiate the interaction, but that would indicate that it would be something the homeowner would have to set whenever they left the house. I figured it would be better used as a welcoming device, so that the homeowner does not have to set it whenever they leave the house and can always leave it running. Additionally, It would be a nice feature so that even while the homeowner is home there is something to greet any guests right upon arrival. 
 
-My initial story
-
 3. Make a new storyboard, diagram and/or script based on these reflections.
 
+**Updated Storyboard**
 
+<img width="1000" alt="lab 3b storyboard" src="https://user-images.githubusercontent.com/52221419/136468799-ac3aced2-1609-4816-a405-26b477fb8f0a.png">
+
+**Updated Verplank Diagram**
+
+<img width="1268" alt="lab 3b verplank" src="https://user-images.githubusercontent.com/52221419/136468820-fb45a895-8fbc-4484-8810-400e5e2e1a1a.png">
+
+**Updated Script**
+
+<img width="724" alt="lab 3b script" src="https://user-images.githubusercontent.com/52221419/136468837-94d2c307-dc4b-4825-9010-3d0c5e43a12f.png">
 
 ## Prototype your system
 
