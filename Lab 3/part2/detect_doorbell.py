@@ -2,6 +2,7 @@ import digitalio
 import board
 from time import perf_counter
 import sys
+import os
 
 from adafruit_rgb_display.rgb import color565
 import adafruit_rgb_display.st7789 as st7789
@@ -37,14 +38,12 @@ buttonB = digitalio.DigitalInOut(board.D24)
 buttonA.switch_to_input()
 buttonB.switch_to_input()
 
-#detecting_dooropen = False
 detecting_doorbell = True
 while detecting_doorbell:
     print('detecting doorbell')
     if not buttonB.value:
         print('doorbell detected, begin door open detection')
         detecting_doorbell = False
-#        detecting_dooropen = True
 
 detecting_dooropen = True
 time_threshold = 3
@@ -52,17 +51,11 @@ currTime = perf_counter()
 while detecting_dooropen and (perf_counter() - currTime < time_threshold):
     print(perf_counter() - currTime)
     if not buttonA.value:
-        print('door opened! recording not taking place')
+        print('door opened!')
         detecting_dooropen = False
 
 if detecting_dooropen:
     print('beginning recording')
-elif not detecting_dooropen:
-    print('door open, ending wizard')
-
- 
-#if detecting_dooropen and (perf_counter() - currTime > time_threshold):
-#    print('beginning recording')
-#elif not detecting_dooropen and (perf_counter() - currTime > time_threshold):
-#    print('door open, ending wizard')
-#    sys.exit() 
+    os.system("./record.sh")
+else:
+    print('Door open, ending wizard')
