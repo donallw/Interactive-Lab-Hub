@@ -103,15 +103,32 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 
 \*\***Post your storyboard and diagram here.**\*\*
 
+**Storyboard:**
+
+<img width="1026" alt="lab3a storyboard" src="https://user-images.githubusercontent.com/52221419/135953340-dd897e11-e76a-4032-99a1-0642d269607a.png">
+
+**Verplank Diagram:**
+
+<img width="1324" alt="lab 3a verplank" src="https://user-images.githubusercontent.com/52221419/135953362-2af79db8-a7ea-4819-a305-17a62c0439d6.png">
+
+
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
 \*\***Please describe and document your process.**\*\*
+
+As the device is fairly simple and merely takes a message, the dialogue was not very extensive. I thought about this with a quick sketch on a piece of scrap paper. The doorbell simply asks to leave a message after the door remains unopened, records the message, and then wishes them farewell. 
 
 ### Acting out the dialogue
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
+
+I partnered with Kristjan Ari Tomasson. Here is a link to the dialogue: 
+
+https://youtu.be/DRni86YhyUM
+
+When reviewing the video, I realized there were a few issues with my script. For example, it is a better to simply state to leave a message after the tone rather than ask. Not only does this make the device simpler, it also promises to notify the homeowner about any unknown arrivals at the property. If the guest were to not leave a message then the homeowner would still see that a message was recorded in the logs. I modified my storyboard to match this update. Another change that I thought to incorporate would be to understand the length of the message, as the the guest could speak for too long and it may get cut off. Otherwise, the dialogue was fairly straightforward and did not have any issues. 
 
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
@@ -125,8 +142,30 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+
+Like I noted above, the wording of the device will certainly need improvement - simply stating that we are taking recording and when the recording will begin rather then asking if they would like to leave a message. This will also help to ensure the homeowner knows whether or not someone rang the doorbell and was not let in, regardless of if the guest got into the house or not. One concern I was worried about was the audio level of the device - if this were to be put in practice, the audio might get easily washed out by the sounds of the environment. 
+
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+
+As mentioned above, I will need to incorporate a tactile button that represents the doorbell, and I will also need to find something to represent the door. I think I will use a button here as well, as it simply needs to click when the door opens. 
+
+I was also thinking about using the camera in order to take a photo of whoever is at the door, to give the homeowner an even better idea of who came to the house. 
+
+Additionally, using the proximity sensor to detect when someone is at the door could also help to further the device, and say hello/welcome to anyone at the door. This could be used alternatively to the doorbell to initiate the interaction, but that would indicate that it would be something the homeowner would have to set whenever they left the house. I figured it would be better used as a welcoming device, so that the homeowner does not have to set it whenever they leave the house and can always leave it running. Additionally, It would be a nice feature so that even while the homeowner is home there is something to greet any guests right upon arrival. 
+
 3. Make a new storyboard, diagram and/or script based on these reflections.
+
+**Updated Storyboard**
+
+<img width="1000" alt="lab 3b storyboard" src="https://user-images.githubusercontent.com/52221419/136468799-ac3aced2-1609-4816-a405-26b477fb8f0a.png">
+
+**Updated Verplank Diagram**
+
+<img width="1268" alt="lab 3b verplank" src="https://user-images.githubusercontent.com/52221419/136468820-fb45a895-8fbc-4484-8810-400e5e2e1a1a.png">
+
+**Updated Script**
+
+<img width="724" alt="lab 3b script" src="https://user-images.githubusercontent.com/52221419/136468837-94d2c307-dc4b-4825-9010-3d0c5e43a12f.png">
 
 ## Prototype your system
 
