@@ -176,7 +176,31 @@ The system should:
 
 *Document how the system works*
 
+The system works fairly simply. 
+1. It begins by detecing someone approaching the device using the proximity sensor, at which point it greets the person and invites them to press the doorbell (the boottom button).
+2. Once someone presses the doorbell, the system begins a countdown which could end prematurely if the door is opened (the top button), where the script will simply stop and restart at step one of this process. 
+3. Otherwise, if the countdown reaches 0, then the device prompts the guest that nobody is home and that it will begin recording a message and taking a photo after a beep. 
+4. Then the system beeps, and begins recording, at which point the guest speaks their message. 
+5. Once the recording is done, the system takes a photo.
+6. The photo and recording are then saved into respective photos and recordings folders on the system, marked with an index number for usability by the homeowner. 
+7. Once the data is saved, the system informs the guest of this and wishes them a good day.
+8. The system then resets and begins scannign for proximity of the next guest, or in other words, restarts at step 1 of this process. 
+
 *Include videos or screencaptures of both the system and the controller.*
+
+**Shown below is a picture of the front of my prototype.**
+
+<img width="565" alt="lab3b prototype front" src="https://user-images.githubusercontent.com/52221419/137197408-87a80ee0-e034-4259-957e-d6d001e6c206.png">
+
+There are a few items marked up on the image. 
+- The green box surrounds the button that imitates the door being opened. If the door was opened, this button would represent the action taken by it. 
+- The red box surrounds the button that represents the doorbell. 
+- The blue box surrounds the proximity sensor of the device.
+- The pink box surrunds the camera that will be used to take a photo of the person at the door after the message is taken. On the outside of this camera is the speakers. 
+
+**Shown here is the interior of the prototype.**
+
+<img width="607" alt="lab 3b prototype interior" src="https://user-images.githubusercontent.com/52221419/137197552-cce97568-3ac0-4c22-b92e-31ee336f26a1.png">
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
