@@ -205,21 +205,64 @@ There are a few items marked up on the image.
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
 
+Instead of a _10 second_ wait time after the doorbell had been pressed, I pushed it down to **3 seconds** for testing purposes so they could see results faster. 
+
+Here are two videos from my two tests.
+- My first video's star was Will Tappen, another Cornell Tech student:  https://youtu.be/GjtVt2WZaBA 
+- My second video's star was Kristjan Ari Thomasson, another Cornell Tech student who is also currently taking IDD: https://youtu.be/2K_Z4_HUMdU
+
+The photos & audio recordings from these testes can be found in the photos and recordings directory of this repository, respectively. 
+
 Answer the following:
 
 ### What worked well about the system and what didn't?
 \*\**your answer here*\*\*
 
-### What worked well about the controller and what didn't?
+**What worked well**
+- The flow from my various scripts was much smoother than I expected. It was quite easy to go from bash scripts to python and back, as well as using multiple different text2speech commands, voice recordings, photos, and sleep/wait timers. I imagined there would have been more finnicky issues with it, but it worked well. (I even learned a good amount of bash scripting!)
+- Although managing accessing the recordings/photos was somewhat annoying, the actual storage of them worked well, and even allowed for many different guests to be logged via index markers for each entry. 
 
+**What did _not_ work well**
+- The process of taking a photo was longer than my testers expected. Will, my first tester, almost left and got confused asking "Did it take the photo yet?" This could have been problematic if they thought it was instant, like many modern cameras. 
+- The homeowner would be required to ssh into the raspberry pi and pull the photos and recordings directly from the pi onto an sd card/flash drive/online repository to view them. This could be improved by immediately pushing the data to a web server of sorts, where the homeowner can log into and view everything that was collected. Alternatively, there could be a display on the back of the door that allows the homeowner to view a file system and directly select photos/recordings from there. 
+- The voice recording length was a fixed amount of time, and for Will (the first tester), I found he was almost cut off by the end of the recording. If he left a longer message, it would have been disregarded after a certain point. For Kristjan (the second tester), his recording was shorter than the length and he had to wait a little for the end of the recording to hit. 
+
+### What worked well about the controller and what didn't?
 \*\**your answer here*\*\*
+
+**What worked well**
+- It was fairly intuitive, and especially with the written guide on the device case, people understood what they needed to do to interact with the buttons. As mentioned in the next section, the proximity detector was not one of the controlling sensors that was not as intuitive. 
+- The placement of the camera made it easy for the testers to know where to look for the photo, as it was obvious that it was a camera. 
+
+**What did _not_ work well**
+- First, the proximity sensor was not as sensitive as it should have been. In the video, you saw that the testers had to get very close to the proximity sensors to detect it. In fact, I had to actually tell Will (the first tester) to wave at the green light (where the proximity sensor was) in order to get him to detect it. This became something of an issue mainly because the software required the proximity sensor to be detected in order to begin detecting the doorbell and recording/taking a photo if nobody opened the door. 
+- Second, although I mentioned above the controller was fairly intuitive, that was because it somewhat relied on a written guide on the device that could have been potentially misunderstood/misread. A more obvious design would be ideal here, that could remove the need for the written guide. In fact, it held up my first tester (Will) who read the whole guide thinking he needed to press the doorbell or something to activate the interaction. 
+
+I was also unable to directly test the door open function on real people. This is partly due to two things: 
+- I would have had to enter the area and press the button myself, introducing issues with allowing the tester to figure things out on their own. 
+- It was difficult to literally have a door open to activate this button, so as mentioned above, I merely used the button on the raspberry pi to imitate this. There would have been much higher costs & engineering processing associated with literally connecting the door opening to the button activation.
+- That being said, most of the device was aimed at handling the case when nobody opened the door. If someone opened the door, the device was not useful beyond greeting someone upon arrival, which was already shown in the current testing environment. Since it merely would end the script process, the door open function was very simple, and I felt _more_ comfortable leaving that out of the testing, although this is certainly not ideal. 
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
 \*\**your answer here*\*\*
-
+- As mentioned above, it would be important to include an easier method for the homeowner to access photos oon the device, rather than having to manually log into the raspberry pi and move them to another platform on their own. This could have been done with perhaps a web server as described before, or a display on the back of the door with its own interface. 
+- A more sensitive setting for the proximity sensor, or even a more precise proximity sensor altogether would have further helped. Rather than taking some waving and investigating (which could lead to someone not usuing the device at all) it would be much more fluid and autonomous. 
+- Perhaps some way of asking the user for how long they would like the message to avoid cutting them off/waiting too long after a short message would make it a more fluid experience. Moreover, it would be great to find a way to automatically detect when there is enough silence to requite ending the reording. This could also be done with a button to end the recording prematurely, similar to how voicemails work (ending the call). 
+- Perhaps instead of actually using the door to indicate if someone opened it, it could be handled by the homeowner with a button on the back of the door or perhaps a remote web server where they can end the script prematurely. This could be extended to maybe unlock the door and allow them in remotely, but this would also be complicated to set up and certainly concerning regarding privacy. 
+- Utilize an upgraded camera or find faster camera management software that would improve the speed with which the photo was taken. 
+- Rather than depending on the proximity detector to start the interaction, it would be a good idea to also allow the usage of simply pressing the doorbell to start the interaction. This way if the proximity detector fails, it will still record the guest / take a photo if they press the doorbell. 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
 \*\**your answer here*\*\*
+
+I already take a photo and a recording of the user throughout the recording, but there are a number of things I could do to further collect data for a dataset of interaction.
+- Adding a speech2text component to store the data not just as an audio recording for the homeowner (like a classic voicemail) but as textual data as well would both conveniently allow the homeowner to read what was in the recording rather than have to play it, but also use NLP models to see what the messages are describing and perhaps what kinds of messages they get at certain times. 
+- Logging the proximity data to observe how far the guests normally are when they arrive at a house could also be useful information that could potentially further help to describe trends. As mentioned above, this would most likely require a more precise proximity sensor. 
+- Identifying noise in the audio / sounds not directly meant to be included in the recording could further introduct features that could indicate something important in the data, help create future products. 
+
+In terms of other sensing modalities I could capture, there are certainly a few:
+- Collecting information about the temperature outside could prove useful, in order to see how the temperature might affect the usage of automatic doorbells / how people arrive at a house. 
+- Similar to the above idea, this device could also measure humidity to similar see how it might affect automatic doorbells / arrivals at a house. 
 
