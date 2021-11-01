@@ -11,7 +11,7 @@ Please place links here to the README.md's for each of your labs here:
 
 [Lab 4. Ph-UI!!!](https://github.com/kristjanari/Interactive-Lab-Hub/tree/Fall2021/Lab%204/)
 
-[Lab 5. Observant Systems](Lab%205/)
+[Lab 5. Observant Systems](https://github.com/kristjanari/Interactive-Lab-Hub/blob/Fall2021/Lab%205/README.md)
 
 Lab 6. Where We Go One, We Go All<!--[](Lab%206/)-->
 
